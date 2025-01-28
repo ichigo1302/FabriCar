@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <meta name="robots" content="nofollow, noindex">
+        <meta name="description" content="Está é uma página de alugel de carros desenvolvida por Lucas Teodoro">
+        <link rel="stylesheet" href="CSS/style.css">
+        <title>Alucar</title>
+    </head>
+    <body>
+        <header>
+            <h1>FabriCars</h1>
+        </header>
+    </body>
+    <section class="banner">
+        <div class="banner-texto-sombreado">
+            <h2>FabriCars</h2>
+            <p>Aluguel de carros</p>
+        </div>
+    </section>
+    <section class="sobre secao-limitada">
+        <h3>Sobre nós</h3>
+        <p>Há 45 anos atuando na área de locação de veículos com segurança e garantia de satisfação. 
+        Temos os melhores preços e modelos do mercado.</p>
+        <div class="galeria-carros">
+            <img src="IMAGENS/img1.jpg">
+            <img src="IMAGENS/img2.jpg">
+            <img src="IMAGENS/img3.jpg">
+        </div>
+        <div class="qualidade-carros">
+            <p> O compromisso da AluCar é com a qualidade.</p>
+            <p> Os melhores carros estão aqui!</p>
+            <p> Assistência 24hrs.</p>
+        </div>
+    </section>
+    <section class="contato">
+       <div class="fundo-preto">
+        <h3>Contato</h3>
+       </div>
+    </section>
+    <section class="secao-formulario secao-limitada">
+        <h3>Análise de cadastro</h3>
+        <p>Preencha os campos abaixo e analisaremos seus dados.
+        Se tudo estiver correto ligaremos para marcar uma visita sua à loja.</p>
+        <form method="post" action="https://www.devmedia.com.br/codigos/formularios/aula9/">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div class="grupo-campo">
+                    <label>Nome</label>
+                    <input placeholder="Seu nome..." type="text" name="nome" required>
+                </div>
+                <div class="grupo-campo">
+                    <label>Data de Nascimento</label>
+                    <input type="date" name="data_nascimento"  required>
+                </div>
+                <div class="grupo-campo">
+                    <label>Telefone</label>
+                    <input placeholder="(99)9 9999-9999" type="tel" name="telefone" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>CNH</legend>
+                <div class="grupo-campo">
+                    <label>Número do registro</label>
+                    <input type="number" name="numero_registro" placeholder="INFORME O NÚMERO DA SUA CNH " required/>
+                </div>
+                <div class="grupo-campo">
+                    <label>Validade</label>
+                    <input type="date" name="validade" required/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>CARROS</legend>
+                <div class="grupo-campo">
+                    <label>Modelo do carro</label>
+                    <select name="carro[]" required>
+                        <optgroup label="BMW">
+                            <option value="X1"> BMW X1</option>
+                            <option value="X3"> BMW X3</option>
+                            <option value="X4"> BMW X4</option>
+                        </optgroup>
+                        <optgroup label="Hyunday">
+                            <option value="Azera">Azera</option>
+                            <option value="Veloster">Veloster</option>
+                            <option value="Genesis">Genesis</option>
+                        </optgroup>
+                        <optgroup label="Jeep">
+                            <option value="Commander">Commander</option>
+                            <option value="Renegade">Renegade</option>
+                            <option value="Gladiator">Gladiator</option>
+                        </optgroup>
+                        <optgroup label="Mercedes-Benz">
+                            <option value="SLK">SLK</option>
+                            <option value="Classe m">Classe M</option>
+                            <option value="Classe CLk">Classe CLK</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </fieldset>
+            <button type="submit">ENVIAR DADOS</button>
+        </form>
+    </section>
+    <footer>
+        <p>Alucar - Site desenvolvido por Lucas Teodoro </p>
+    </footer>
+</html>
